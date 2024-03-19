@@ -1,10 +1,10 @@
-# ![Python Functions - tktk Microlesson Name](./assets/hero.png)
+# ![Python Functions - Args and Kwargs](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to distinguish between "args" and "kwargs" and better know when to use them.
 
-# Parameters & Arguments
+## Parameters & Arguments
 
-Just like in JS, **parameters** are the placeholders for passing input to a function.
+Just like in JavaScript, **parameters** are the placeholders for passing input to a function.
 
 ```python
 # a & b are parameters
@@ -12,7 +12,7 @@ def add(a, b):
   return a + b
 ```
 
-Also like JS, the values/expressions passed in to a function when calling it are known as **arguments**:
+Also like JavaScript, the values/expressions passed in to a function when calling it are known as **arguments**:
 
 ```python
 num = 5
@@ -35,11 +35,11 @@ add()
 
 ## Accepting a varying number of arguments
 
-In JavaScript, we were able to access “extra” arguments being passed in to a function by using the special `arguments`:
+In JavaScript, we were able to access "extra" arguments being passed in to a function by using the special `arguments`:
 
-```jsx
+```javascript
 // Using the arguments special variable
-function sum() {
+const sum() => {
   let total = 0;
   for (arg of arguments) total += arg;
   return total;
@@ -50,8 +50,8 @@ console.log( sum(1, 5, 10) );  // -> 16
 
 Or preferably by using ES2015’s *rest parameters*:
 
-```jsx
-function sum(...nums) {
+```javascript
+const sum = (...nums) => {
   return nums.reduce((sum, num) => sum + num, 0);
 }
 
@@ -60,7 +60,7 @@ console.log( sum(1, 5, 10) );  // -> 16
 
 ### Python’s `*` Parameter Specifier (`args`)
 
-Using the `*` (“star”) specifier in a parameter list allows us to pass in a varying number of **positional** arguments into a function:
+Using the `*` ("star") specifier in a parameter list allows us to pass in a varying number of **positional** arguments into a function:
 
 ```python
 def my_function(*args):
@@ -136,37 +136,3 @@ Positional params: A, B
   shape: circle
 '''
 ```
-
-# Review Questions ❓
-
-Take a moment to review the following questions:
-
-1. In the following, which line of code will be the last to execute?
-    
-    ```python
-    def categorize(x):
-      if (x < 8):
-        return 8
-      x += 3
-      if (x < 15):
-        return x
-      return 100
-    
-    print(categorize(10))
-    ```
-    
-2. Assuming the following function:
-    
-    ```python
-    def add(a, b):
-      return a + b
-    ```
-    
-    Which of the following statements will result in an error? (there could be more than one)
-    
-    1. `add(10, 100.)`
-    2. `add(10, '10')`
-    3. `add(100)`
-    4. `add('abc', 'def')`
-    5. `add(10, 20, 30)`
-3. What “feature” in Python would allow the `add` function above to accept any number of numbers to add together?
