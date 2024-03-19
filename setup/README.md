@@ -15,7 +15,10 @@ mkdir python-functions
 cd python-functions
 ```
 
-<!-- Other setup instructions here -->
+Create a file for the lesson:
+```bash
+touch app.py
+```
 
 Open the contents of the directory in VSCode:
 
