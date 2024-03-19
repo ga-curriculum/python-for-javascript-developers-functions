@@ -2,24 +2,23 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+In this module, students will explore the ways to define and call function in the Python language.
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- Intro to Python
+- Python Control Flow
 
 ## Content
 
-| Lesson                                                          | Video Time | Video | Skills                                 |
-| --------------------------------------------------------------- | :--------: | :---: | -------------------------------------- |
-| [Setup](./setup/README.md)                                      |     --     |  --   | Setting up the development environment |
-| [Concepts](./concepts/README.md)                                |     --     |  --   | tktk skills covered                    |
-| [Defining a Function](./defining-a-function/README.md)          |     --     |  --   | tktk skills covered                    |
-| [Calling Functions](./calling-functions/README.md)              |     --     |  --   | tktk skills covered                    |
-| [Arguments and Key Word Arguments](./args-and-kwargs/README.md) |     --     |  --   | tktk skills covered                    |
-| **Total content**                                               |     --     |  --   |                                        |
+| Lesson | Video Time | Video | Skills |
+| ------ | :--------: | :---: | ------ |
+| [Setup](./setup/README.md) | -- | -- | Setting up the development environment. |
+| [Concepts](./concepts/README.md) | -- | -- | Revisiting the concepts of functions. |
+| [Defining a Function](./defining-a-function/README.md) | -- | -- | Defining a function in Python. |
+| [Calling Functions](./calling-functions/README.md) | -- | -- | Calling a function in Python. |
+| [Arguments and Key Word Arguments](./args-and-kwargs/README.md) | -- | -- | Declaring arguments in Python and how to use kwargs. |
+| **Total content** | -- | -- |                                        |
 
 ## References
 
