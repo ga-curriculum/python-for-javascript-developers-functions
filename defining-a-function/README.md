@@ -8,7 +8,7 @@ Here's how we define a basic function in Python:
 
 ```python
 def fahr_to_kelvin(temp):
-	return ((temp - 32) * (5/9)) + 273.15
+  return ((temp - 32) * (5/9)) + 273.15
 ```
 
 As you can see:
@@ -17,7 +17,7 @@ As you can see:
 - The next word is the name (identifier) of the function.
 - Following that is a parameter list inside parentheses.
 - The first line ends with a colon.
-- The first line is followed by an indented code block that we have become familiar with.
+- The first line is followed by an indented code block with which we have become familiar.
 - Python functions, like JavaScript, optionally return a value using a `return` statement.
 
 ## A Minimal Function in Python
@@ -31,7 +31,7 @@ def first_function():
   pass
 ```
 
-The `pass` statement is simply a "do nothing" statement and is useful here to create a function that has at least one statement in its block, which is a requirement.
+The `pass` statement is simply a "do nothing" statement. It is useful here to create a function with at least one statement in its block, which is required.
 
 - What does a JS function return by default if it doesn’t include a return statement?
     `undefined`
@@ -50,7 +50,7 @@ print(result)
 
 ## Key Differences Between Python & JS Functions
 
-Besides the obvious syntactical differences, here are a few other things to be aware of:
+Besides the noticeable syntactical differences, here are a few other things to be aware of:
 
 ### Function expressions do not exist in Python
 
@@ -64,7 +64,7 @@ my_function = def my_function():
 
 ### Python has a different sort of anonymous/inline function
 
-Python does have a the concept of anonymous and/or inline functions - called `lambda` functions.
+Python has the concept of anonymous and/or inline functions called `lambda` functions.
 
 `lambda` functions are very much like *Arrow Functions* in JavaScript:
 
