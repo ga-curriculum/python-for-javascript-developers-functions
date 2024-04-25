@@ -94,7 +94,8 @@ print(dev_skills('Alex', 'HTML', 'CSS', 'JavaScript', 'Python'))
 
 ### Python’s `**` Parameter Specifier (`**kwargs`)
 
-[https://s3-us-west-2.amazonaws.com/secure.notion-static.com/866439fb-27a8-4744-a435-5db6d1151e0d/zoom_0_(1).mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/866439fb-27a8-4744-a435-5db6d1151e0d/zoom_0_(1).mp4)
+tktk - Hunter, in the notion content there is a video here of Ben showing how to prounouce kwargs. Can we get a visual of that here? I like a dictionary prounouncing things. I took a screen shot of what I mean with the word character
+![](./assets/dictionary-ex.png)
 
 If you’d like to be able to access a varying number of **keyword** arguments, use `**kwargs` at the **end of the parameter list**:
 
