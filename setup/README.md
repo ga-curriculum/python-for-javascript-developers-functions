@@ -2,25 +2,26 @@
 
 ## Setup
 
-Open your Terminal application and navigate to your **`~/code/ga/lectures`** directory:
+Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 
 ```bash
 cd ~/code/ga/lectures
 ```
 
-Make a new directory called **`python-functions`**, then enter this directory:
+Make a new directory called `python_functions`, then enter this directory:
 
 ```bash
-mkdir python-functions
-cd python-functions
+mkdir python_functions
+cd python_functions
 ```
 
-Create a file for the lesson:
+Once in this directory, create a `functions.py` file:
+
 ```bash
-touch app.py
+touch functions.py
 ```
 
-Open the contents of the directory in VSCode:
+With the file created, open the contents of the directory in VS Code:
 
 ```bash
 code .

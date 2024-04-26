@@ -2,7 +2,7 @@
 
 ## About
 
-In this module, students will explore the ways to define and call function in the Python language.
+In this module, students will explore the ways to define and call functions in the Python language.
 
 ## Prerequisites
 
@@ -13,12 +13,11 @@ In this module, students will explore the ways to define and call function in th
 
 | Lesson | Video Time | Video | Skills |
 | ------ | :--------: | :---: | ------ |
-| [Setup](./setup/README.md) | -- | -- | Setting up the development environment. |
-| [Concepts](./concepts/README.md) | -- | -- | Revisiting the concepts of functions. |
-| [Defining a Function](./defining-a-function/README.md) | -- | -- | Defining a function in Python. |
-| [Calling Functions](./calling-functions/README.md) | -- | -- | Calling a function in Python. |
-| [Arguments and Key Word Arguments](./args-and-kwargs/README.md) | -- | -- | Declaring arguments in Python and how to use kwargs. |
-| **Total content** | -- | -- |                                        |
+| [Setup](./setup/README.md)                                                   | -- | -- | Setting up the development environment.                         |
+| [Defining and Calling Functions](./defining-and-calling-functions/README.md) | -- | -- | Defining a function in Python.                                  |
+| [Parameters and Arguments](./parameters-and-arguments/README.md)             | -- | -- | Declaring and invoking functions with parameters and arguments. |
+| [kwargs](./kwargs/README.md)                                                 | -- | -- | Defining and invoking functions using kwargs.                   |
+| **Total content**                                                            | -- | -- |                                                                 |
 
 ## References
 
