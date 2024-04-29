@@ -1,4 +1,4 @@
-# ![Python Functions](../assets/-hero.png)
+# ![Python Functions](../assets/hero.png)
 
 ## About
 

@@ -4,9 +4,6 @@
 
 ## Keyword arguments - kwargs
 
-tktk - Hunter, in the notion content there is a video here of Ben showing how to prounouce kwargs. Can we get a visual of that here? I like a dictionary prounouncing things. I took a screen shot of what I mean with the word character
-![dictionary](./assets/dictionary-ex.png)
-
 `kwargs` stands for ***keyword arguments***. They are arguments that have a name. You can provide as many as you like to a function.
 
 ## Python's `**` parameter specifier (`**kwargs`)

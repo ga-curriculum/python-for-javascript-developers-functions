@@ -6,20 +6,14 @@
 
 A function definition will have the following syntax:
 
-tktk Hunter, could you add a syntax diagram similar to JavaScript's [here](https://git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-functions/blob/main/fundamentals/README.md) with the below code?
+![Function syntax](./assets/function-diagram.png)
 
-```python
-def function_name():
-    statements
-    return statement
-```
-
-1. The def keyword.
+1. The `def` keyword.
 2. The name of the function. It should be written in `snake_case`.
 3. The parameter list, inside parentheses.
 4. The body of the function is indicated by a colon.
    - 4a. The statements that make up the function itself. These must be indented.
-   - 4b. Optionally, a return statement.
+   - 4b. Optionally, a `return` statement.
 
 ## Defining a function
 

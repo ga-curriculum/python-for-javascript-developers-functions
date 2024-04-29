@@ -1,4 +1,4 @@
-# ![Python Functions](./assets/tktk-hero.png)
+# ![Python Functions](./assets/hero.png)
 
 ## About
 
