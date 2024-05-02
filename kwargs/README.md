@@ -42,7 +42,7 @@ This can make passing arguments to a function more readable, and is a common pra
 
 ## Python's `**` parameter specifier (`**kwargs`)
 
-If you'd like to access a varying number of keyword arguments, use `**kwargs` at the ***end of the parameter list***. This is similar to how we passed an arbitrary number of positional arguments with `*args*`.
+If you'd like to access a varying number of keyword arguments, use `**kwargs` at the ***end of the parameter list***. This is similar to how we passed an arbitrary number of positional arguments with `*args`.
 
 Just like with `args`, `kwargs` could technically be anything but is named `kwargs` by convention - what matters is the `**`.
 
