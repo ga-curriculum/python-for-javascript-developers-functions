@@ -4,11 +4,47 @@
 
 ## Keyword arguments - kwargs
 
-`kwargs` stands for ***keyword arguments***. They are arguments that have a name. You can provide as many as you like to a function.
+`kwargs` stands for ***keyword arguments***. This is a different style of passing arguments that isn't possible in JavaScript.
+
+These are arguments that have a name. You can provide as many as you like to a function when you call it.
+
+As we've seen, we can pass positional arguments to a function:
+
+```python
+def make_employee(role):
+    print(role)
+    # prints: CEO
+
+    employee = {"role": role}
+    return employee
+
+print(make_employee("CEO"))
+# prints: { 'role': 'CEO' }
+```
+
+But we can pass keyword arguments to a function as well:
+
+```python
+def make_employee(role):
+    print(role)
+    # prints: CEO
+
+    employee = {"role": role}
+    return employee
+
+print(make_employee(role="CEO"))
+# prints: { 'role': 'CEO' }
+```
+
+Because `role` is the parameter's name, we can assign `"CEO"` to `role` when we pass it into the `make_employee` function. That value will be matched to the `role` parameter because it has the same name.
+
+This can make passing arguments to a function more readable, and is a common practice in many Python frameworks.
 
 ## Python's `**` parameter specifier (`**kwargs`)
 
-If you'd like to access a varying number of keyword arguments, use `**kwargs` at the ***end of the parameter list***. Just like with `args`, `kwargs` could technically be anything but is named `kwargs` by convention - what matters is the `**`.
+If you'd like to access a varying number of keyword arguments, use `**kwargs` at the ***end of the parameter list***. This is similar to how we passed an arbitrary number of positional arguments with `*args*`.
+
+Just like with `args`, `kwargs` could technically be anything but is named `kwargs` by convention - what matters is the `**`.
 
 Let's define and call a function that uses `**kwargs`:
 
@@ -45,7 +81,9 @@ def make_employee(role, **kwargs):
 print(make_employee("CEO", first="Sam", middle="Harris", last="Altman"))
 ```
 
-Keyword arguments have another use - providing positional arguments according to their parameter name:
+## Combining `kwargs` and keyword arguments
+
+We can combine these ideas in the same function:
 
 ```python
 print(make_employee(role="CEO", first="Sam", middle="Harris", last="Altman"))
@@ -55,7 +93,7 @@ print(make_employee(role="CEO", first="Sam", middle="Harris", last="Altman"))
 # }
 ```
 
-Because `role` is the name of the parameter we can assign `"CEO"` to `role` when we passing it into the `make_employee` function, and that value will be matched to the positional `role` parameter. We can even provide this out of order if we want:
+We can even provide the `role` out of order if we want:
 
 ```python
 print(make_employee(first="Sam", middle="Harris", last="Altman", role="CEO"))
