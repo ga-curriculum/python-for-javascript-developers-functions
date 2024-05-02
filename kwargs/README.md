@@ -32,7 +32,7 @@ print(make_employee("CEO", first="Sam", middle="Harris", last="Altman"))
 # }
 ```
 
-`**kwargs` should only be added at the end of the parameter list.
+`kwargs` arguments are not positional! You can provide them in any order, but they must come after any positional arguments.
 
 As you can see above, in a function, kwargs can be accessed by its name - `kwargs`. `kwargs` is a dictionary, meaning you can treat it as such. For example, you could iterate through it using the `values()` method:
 
@@ -47,6 +47,28 @@ def make_employee(role, **kwargs):
 
 print(make_employee("CEO", first="Sam", middle="Harris", last="Altman"))
 ```
+
+Keyword arguments have another use - providing positional arguments according to their parameter name:
+
+```python
+print(make_employee(role="CEO", first="Sam", middle="Harris", last="Altman"))
+# prints: {
+#     'role': 'CEO',
+#     'name': {'first': 'Sam', 'middle': 'Harris', 'last': 'Altman'}
+# }
+```
+
+Because `role` is the name of the parameter we can assign `"CEO"` to `role` when we passing it into the `make_employee` function, and that value will be matched to the positional `role` parameter. We can even provide this out of order if we want:
+
+```python
+print(make_employee(first="Sam", middle="Harris", last="Altman", role="CEO"))
+# prints: {
+#     'role': 'CEO',
+#     'name': {'first': 'Sam', 'middle': 'Harris', 'last': 'Altman'}
+# }
+```
+
+Note when we do this, `role` is not added to the `kwargs` dictionary - it is matched directly with its positional parameter.
 
 ### Combining argument types
 
