@@ -1,0 +1,32 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+setup = new Template.Microlesson {
+  friendlyName = "Setup"
+  dirName = "setup"
+  type = "Content"
+  videoUrl = "https://generalassembly.wistia.com/medias/px1yp4gymm"
+}
+
+definingAndCallingFunctions = new Template.Microlesson {
+  friendlyName = "Defining and Calling Functions"
+  dirName = "defining-and-calling-functions"
+  type = "Content"
+  videoUrl = "https://generalassembly.wistia.com/medias/36bkblp1tn"
+}
+
+parametersAndArguments = new Template.Microlesson {
+  friendlyName = "Parameters and Arguments"
+  dirName = "parameters-and-arguments"
+  type = "Content"
+  videoUrl = "https://generalassembly.wistia.com/medias/rtwqhli823"
+}
+
+kwargs = new Template.Microlesson {
+  friendlyName = "Kwargs"
+  dirName = "kwargs"
+  type = "Content"
+  videoUrl = "https://generalassembly.wistia.com/medias/82mwr252y4"
+}
+

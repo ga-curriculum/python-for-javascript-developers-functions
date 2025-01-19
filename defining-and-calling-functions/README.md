@@ -1,4 +1,7 @@
-# ![Python Functions - Defining and Calling Functions](./assets/hero.png)
+<h1>
+  <span class="headline">Functions</span>
+  <span class="subhead">Defining and Calling Functions</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to define a function in Python.
 
