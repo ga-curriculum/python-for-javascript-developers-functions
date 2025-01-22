@@ -1,4 +1,7 @@
-# ![Python Functions - References](./assets/hero.png)
+<h1>
+  <span class="headline">Functions</span>
+  <span class="subhead">References</span>
+</h1>
 
 ## Lesson references
 
