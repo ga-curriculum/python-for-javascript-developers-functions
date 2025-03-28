@@ -7,7 +7,7 @@
 
 ## Parameters
 
-Just like in JavaScript, **parameters** are the placeholders for passing input to a function.
+In Python, **parameters** are variables that act as placeholders for values passed into a function.
 
 ```python
 # text is a parameter
@@ -17,27 +17,31 @@ def print_banner(text):
     print("=======================")
 ```
 
+The function above accepts one parameter, `text`. When the function is called, a value must be provided for this parameter.
+
 ## Arguments
 
-Also like JavaScript, the values/expressions passed in to a function when calling it are known as **arguments**:
+An **argument** is the actual value you pass into a function when you call it. Just like in JavaScript, arguments are used to provide input to a function.
 
 ```python
-# "hello, world" is an arugment
+# "hello, world" is an argument
 print_banner("hello, world")
 ```
 
-However, unlike JavaScript, Python requires that the correct number of arguments be provided when calling a function. For example if you try to call print_banner without any arguments now:
+In this example, the value `"hello, world"` is passed to the function as the argument for `text`.
+
+Unlike JavaScript, Python requires that you provide the correct number of arguments when calling a function. If you don’t, Python will raise an error.
 
 ```python
 print_banner()
 
-# generates the following error:
-# TypeError: print_banner() missing 1 required positional arguments: 'text'
+# Error:
+# TypeError: print_banner() missing 1 required positional argument: 'text'
 ```
 
-## Accepting a varying number of arguments
+## Accepting a variable number of arguments
 
-In JavaScript, we accomplished this using *rest parameters*:
+In JavaScript, we can use **rest parameters** to allow a function to accept any number of arguments:
 
 ```javascript
 const sum = (...nums) => {
@@ -50,21 +54,20 @@ const sum = (...nums) => {
   return total;
 };
 
-
 console.log(sum(1, 5, 10));
 // prints: 16
 ```
 
-### Python's `*` Parameter Specifier (`args`)
+### Python’s `*args` syntax
 
-Using the `*` ("star") specifier in a parameter list allows us to pass in a varying number of **positional** arguments into a function:
+In Python, you can use the `*` (asterisk) before a parameter name to accept a variable number of **positional arguments**. This is commonly written as `*args`.
 
 ```python
 def sum(*args):
     print(type(args))
     # prints: <class 'tuple'>
+
     total = 0
-    
     for arg in args:
         total += arg
 
@@ -74,20 +77,27 @@ print(sum(1, 5, 10))
 # prints: 16
 ```
 
-The identifier used with `*`, for example, `args` as we used above, can technically be anything. However the convention is to use `args`.
+The `args` parameter becomes a **tuple** that contains all the values passed to the function. The name `args` is a common convention, but you can technically use any name after the `*`.
 
-Always use the `*args` parameter **after** any **required** positional parameters. For example:
+### Mixing required and variable arguments
+
+If your function has both required and variable arguments, the required ones must come **first**.
 
 ```python
 def sum(greeting, *args):
     print(greeting)
     # prints: Hello, friend
+
     total = 0
-    
     for arg in args:
         total += arg
 
     return total
 
 print(sum("Hello, friend", 1, 5, 10))
+# prints:
+# Hello, friend
+# 16
 ```
+
+In this example, `"Hello, friend"` is passed as the required `greeting` argument, and the numbers are collected in `args`.
