@@ -30,8 +30,8 @@ In this module, students will explore the ways to define and call functions in t
 
 ### Course landing pages
 
-- [SEB - Software Engineering Bootcamp](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-for-javascript-developers-functions/canvas-landing-pages/seb.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-for-javascript-developers-functions/canvas-landing-pages/fallback.html)
+- [SEB - Software Engineering Bootcamp](https://ga-curriculum.github.io/python-for-javascript-developers-functions/canvas-landing-pages/seb.html)
+- [Fallback](https://ga-curriculum.github.io/python-for-javascript-developers-functions/canvas-landing-pages/fallback.html)
 
 ### Resources
 
@@ -43,4 +43,4 @@ In this module, students will explore the ways to define and call functions in t
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://ga-curriculum.github.io/universal-resources-internal/module-feedback.html)!**
